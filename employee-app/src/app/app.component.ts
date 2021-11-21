@@ -11,3 +11,4 @@ export class AppComponent {
   lname = 'Gorbachov';
   dateofbirth = '31/12/1977';
 }
+

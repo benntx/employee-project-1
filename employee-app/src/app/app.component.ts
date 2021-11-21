@@ -7,4 +7,7 @@
 })
 export class AppComponent {
   title = 'Employee List';
+  fname = 'Alex';
+  lname = 'Gorbachov';
+  dateofbirth = '31/12/1977';
 }

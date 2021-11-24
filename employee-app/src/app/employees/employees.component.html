@@ -1,47 +1,19 @@
-<h2>{{employee.fname}} Details</h2>
-<div><span>id: </span>{{employee.id}}</div>
-<div><span>First Name: </span>{{employee.fname}}</div>
-<div><span>Last Name: </span>{{employee.lname}}</div>
-<div><span>Date of birth: </span>{{employee.dateofbirth}}</div>
-<div><span>Salary: </span>{{employee.salary}}</div>
-<div><span>e-mail: </span>{{employee.email}}</div>
+<h2>My Staff</h2>
+<ul class="employees">
+  <li *ngFor="let employee of employees" [class.selected]="employee === selectedEmployee" (click)="onSelect(employee)">
+    <span class="badge">{{employee.id}} </span> {{employee.fname}} {{employee.lname}}
+  </li>
+</ul>
 
-<br>
-<div>
-        <label for="fname">Employee first name: </label>
-        <br>
-        <input id="fname" [(ngModel)]="employee.fname" placeholder="fname">
-        <br>
-        <label for="lname">Employee last name: </label>
-        <br>
-    <label for="lname">Date of birth: </label>
-    <span>{{employee.dateofbirth}}</span>
-        
-    <br>
-    <label for="salary">Salary: </label>
-        <input id="salary" [(ngModel)]="employee.salary" placeholder="salary">
-    <br>
-    <label for="email">E-mail: </label>
-        <input id="email" [(ngModel)]="employee.email" placeholder="email">
-    
-    </div>
+<div *ngIf="selectedEmployee">
 
-
-<h2>{{employee1.fname }} Details</h2>
-<div><span>id: </span>{{employee1.id}}</div>
-<div><span>First Name: </span>{{employee1.fname}}</div>
-<div><span>Last Name: </span>{{employee1.lname}}</div>
-<div><span>Date of birth: </span>{{employee1.dateofbirth}}</div>
-<div><span>Salary: </span>{{employee1.salary}}</div>
-<div><span>e-mail: </span>{{employee1.email}}</div>
-
-    <br>
-<div>
-        <label for="fname">Employee first name: </label>
-        <br>
-        <input id="fname" [(ngModel)]="employee1.fname" placeholder="fname">
-        <br>
-        <label for="lname">Employee last name: </label>
-        <br>
-        <input id="lname" [(ngModel)]="employee1.lname" placeholder="lname">
-    </div>
+<h2>{{selectedEmployee.fname | uppercase}} {{selectedEmployee.lname | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedEmployee.id}}</div>
+  <div>
+    <label for="employee-fname">Employee first name: </label>
+    <input id="employee-fname" [(ngModel)]="selectedEmployee.fname" placeholder="fname">
+    <br>
+    <label for="employee-lname">Employee last name: </label>
+    <input id="employee-lname" [(ngModel)]="selectedEmployee.lname" placeholder="lname">
+  </div>
+</div>

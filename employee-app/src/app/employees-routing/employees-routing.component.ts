@@ -1,18 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
-//import {EMPLOYEES } from '../list-employees';
 import { EmployeeService } from '../employee.service';
 import { MessageService } from '../message.service';
 
-
 @Component({
-  selector: 'app-employees',
-  templateUrl: './employees.component.html',
-  styleUrls: ['./employees.component.css']
+  selector: 'app-employees-routing',
+  templateUrl: './employees-routing.component.html',
+  styleUrls: ['./employees-routing.component.css']
 })
 
-
-export class EmployeesComponent implements OnInit {
+export class EmployeesRoutingComponent implements OnInit {
 
   //employees = EMPLOYEES;
   employees: Employee[] = [];

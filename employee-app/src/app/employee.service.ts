@@ -19,8 +19,8 @@ export class EmployeeService {
   getEmployees(): Observable<Employee[]> {
     const employees = of(EMPLOYEES);
     this.messageService.add('Employee Service message: all employees were updated!');
-    return employees;
-      }
+    return employees;
+    }
     
     constructor(private messageService: MessageService) { }
 }

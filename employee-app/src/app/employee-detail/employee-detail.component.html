@@ -9,16 +9,18 @@
     <label for="employee-lname">Employee last name: </label>
     <input id="employee-lname" [(ngModel)]="employee.lname" placeholder="lname">
     
-    <label for="employee-dateofbirth">Date of birth: </label> {{employee.dateofbirth}}    
+    <label for="employee-dateofbirth">Date of birth: </label> 
+    <input id="employee-dateofbirth" [(ngModel)]="employee.dateofbirth" placeholder="dateofbirth">    
     
     <label for="employee-salary">Salary: </label>
     <input id="employee-salary" [(ngModel)]="employee.salary" placeholder="salary">
   
     <label for="employee-salary">E-mail: </label>
-    <a href="mailto:{{employee.email}}" >{{employee.email}}</a>
+    <div><input id="employee-email" [(ngModel)]="employee.email" placeholder="email"></div>
   </div>
   
   </div>
+  <button (click)="save()">save</button>
   <br>
   <button (click)="goBack()">Go back</button>
   <br> <br>

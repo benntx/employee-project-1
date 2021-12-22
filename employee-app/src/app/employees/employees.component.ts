@@ -20,6 +20,7 @@ export class EmployeesComponent implements OnInit {
   employees: Employee[] = [];
 
   selectedEmployee?: Employee;
+  
   onSelect(employee: Employee): void {
   this.selectedEmployee = employee;
   this.messageService.add(`Employee Component message: Selected employee id=${employee.id}`);

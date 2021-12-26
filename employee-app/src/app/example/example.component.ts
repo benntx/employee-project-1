@@ -13,7 +13,7 @@ export class ExampleComponent implements OnInit {
   }
 
   today: number = Date.now();
-  curr: number = 100;
+  curr: number = 100.45;
   pi: number = 3.14159265359;
   employee: Object = { id: 12768733, fname: 'John', lname: 'Tucker', dateofbirth: '12/31/77', salary: 5400, email: 'john@gmail.com'}
   worker: string[] = ['John', 'Tucker', 'john@gmail.com'];

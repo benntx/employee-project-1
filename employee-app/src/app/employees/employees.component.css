@@ -80,7 +80,7 @@ input {
 
 .wrapper {
   display: grid;  
-  grid-template-columns: 50% 30%;
+  grid-template-columns: 60% 30%;
   justify-items: center;
 }
 
@@ -114,4 +114,4 @@ input {
    background-color: #525252;
    color: white;
    cursor: pointer;
- }
+ } 

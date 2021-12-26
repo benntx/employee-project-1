@@ -1,0 +1,16 @@
+<h2>Pipes Examples</h2>
+Today is: <p>{{today | date}}</p>
+Full date is: <p>{{today | date:'fullDate'}}</p> 
+The time is: <p>{{today | date:'shortTime'}}</p>
+System currency is: <p>{{curr | currency}}</p>
+Local currency is: <p>{{curr | currency: 'ILS'}}</p>
+Local currency is: <p>{{curr | currency: 'Shekel ' | uppercase}}</p>
+Pi number with no specified formatting: <p>{{pi | number}}</p>   
+Pi number with digitsInfo parameter specified: <p>{{pi | number:'2.1-10'}}</p>
+Pi as percent: <p>{{pi | percent}}</p>
+Employee in json format: <p>{{employee | json}}</p>
+Worker details: (<span>{{worker | json}})</span>
+<ul>
+    <li *ngFor="let i of worker | slice:0:3">{{i}}</li>
+</ul>
+Worker name:<span>'{{worker_name | slice:0:4}}'</span>

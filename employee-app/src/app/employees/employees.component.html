@@ -8,8 +8,8 @@
         <td class="employees">{{employee.id}}</td> 
         <td class="employees">{{employee.fname}}</td>
         <td class="employees">{{employee.lname}}</td>
-        <td class="employees">{{employee.dateofbirth}}</td>
-        <td class="employees">{{employee.salary}}</td>
+        <td class="employees">{{employee.dateofbirth | date:'dd/MM/yyyy'}}</td>
+        <td class="employees">{{employee.salary | currency: 'ILS ' :'code':'4.0-2'}}</td>
         <td class="employees">{{employee.email}}</td>
     </tr>     
 </table>

@@ -21,8 +21,8 @@
          <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.id}}</td> 
          <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.fname}}</td>
          <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.lname}}</td>
-         <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.dateofbirth}}</td>
-         <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.salary}}</td>
+         <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.dateofbirth | date:'longDate'}}</td>
+         <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.salary | currency: 'ILS'}}</td>
          <td class="employees" routerLink="/detail/{{employee.id}}">{{employee.email}}</td> 
         </tr>
              

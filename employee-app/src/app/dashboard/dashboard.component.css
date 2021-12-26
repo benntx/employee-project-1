@@ -38,7 +38,7 @@ h2 {
   
   @media (min-width: 600px) {
     a {
-      width: 18%;
+      width: 16%;
       box-sizing: content-box;
     }
   }

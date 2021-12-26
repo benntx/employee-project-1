@@ -4,6 +4,10 @@ h1 {
 nav {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;    
+  align-content: flex-start;
+  align-items: flex-start;
 }
 nav a {
   padding: 1rem;

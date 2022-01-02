@@ -5,6 +5,7 @@ import { EmployeesRoutingComponent } from './employees-routing/employees-routing
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { ExampleComponent } from './example/example.component';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'employees', component: EmployeesComponent },
   { path: 'employees-routing', component: EmployeesRoutingComponent },
   { path: 'detail/:id', component: EmployeeDetailComponent },
-  { path: 'example', component: ExampleComponent }
+  { path: 'example', component: ExampleComponent },
+  { path: 'search', component: EmployeeSearchComponent }
 ];
 
 @NgModule({
